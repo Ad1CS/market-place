@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# FractionalMarket
 
-# Run and deploy your AI Studio app
+Маркетплейс долевого владения активами.
 
-This contains everything you need to run your app locally.
+## Развертывание на Vercel
 
-View your app in AI Studio: https://ai.studio/apps/drive/1IPjd5x8SdLb0VwOnCE7pRvUK1PjawH9U
+1. **Создайте репозиторий**: Загрузите файлы этого проекта в новый репозиторий на GitHub.
+2. **Импортируйте в Vercel**:
+   - Зайдите на [Vercel](https://vercel.com).
+   - Нажмите "Add New Project".
+   - Выберите ваш репозиторий GitHub.
+3. **Настройка окружения**:
+   - В настройках проекта Vercel (раздел "Environment Variables") добавьте переменную:
+     - **Name**: `API_KEY`
+     - **Value**: Ваш ключ Google Gemini API.
+4. **Deploy**: Нажмите "Deploy".
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Vercel автоматически определит настройки Vite и соберет проект.
